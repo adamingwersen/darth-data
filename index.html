@@ -41,7 +41,7 @@
 			<div class="slides">
 
 				<section>
-					<h3>Less obvious drawbacks of Big Data</h3>
+					<h2>Less obvious drawbacks of Big Data</h2>
 					<h4>an inconvenient footnote</h4>
 					<p>
 						<small>Slides by <a href="github.com/adamingwersen">Adam Ingwersen</a></small>
@@ -51,44 +51,145 @@
 				</section>
 
 				<section id="fragments1">
-					<h3>Outline</h3>
+					<h4>Outline</h4>
 					<ol>
-						<li class="fragment">	What are the prerequisites for Big Data?</li> <!-- Willing participants -->
+						<li class="fragment">	What enables Big Data and why?</li> <!-- Willing participants -->
 						<li class="fragment">	Obfuscation by human centrism</li> <!-- Just because you don't see it, doesn't mean it's not there -->
-						<li class="fragment">	The hidden costs of convenience</li> <!-- Transportation and Calculation -->
 						<li class="fragment">	The death of Moores Law</li> <!-- Transistors are not yet nanotech, compute units vs. power over time -->
 						<li class="fragment">	The actual scale of server computing</li> <!-- Google, NSA and what they collect/analyze -->
 						<li class="fragment">	The future and how to cope</li> <!-- Governmental interference or 'good companies' -->
 					</ol>
 				</section>
 
-				<section>
-					<h3> The actual scale of server computing #1</h3>
-					<p class="fragment"> Companies collect increasing amounts of data and do more with it </p>
-					<p class="fragment"> All data and "calculations" go through data centers and server farms </p>
-					<p class="fragment"> All internet communication requires servers to transfer information over a network </p>
-					<p class="fragment"> .. how so?</p>
-				</section>
+				<section id="prerequisites">
+					<section>
+						<h2> 1. What enables Big Data and why?</h2>
+					</section>
 
-				<section id="cap" data-background-image="https://media.giphy.com/media/PD9hjqdeidgqY/giphy.gif">
-				</section>
-
-				<section>
-					<h3> The actual scale of server computing #2</h3>
-					<ul>
-						<li class="fragment">2013: U.S. Data Centers consumed 91*10^9 KwH annually</li>
-						<ul>
-							<li class="fragment">"equivalent to the annual output of 34 large (500-megawatt) coal-fired power plants"</li>
+					<section>
+						<h4> Why collect data? (consumer) </h4>
+						<ul class="fragment">
+							<li>Better Products:</li>
+								<ul>
+									<li>Usability by integration with other services</li>
+									<li>Backups of pictures, videos etc.</li>
+									<li>More features</li>
+									<li>Personalized recommendations</li>
+								</ul>
 						</ul>
-						<li class="fragment">2020 Forecast: 140*10^9 KwH annually</li>
-							<ul>
-								<li class="fragment">..that's the annual output of ~50 power plants</li>
-								<li class="fragment">..costing $13B annually, in electricity bills</li>
-								<li class="fragment">..100*10^6 tonnes of carbon pollution</li>
-							</ul>
-					</ul>
-					<small>Source: <a href="https://www.nrdc.org/resources/americas-data-centers-consuming-and-wasting-growing-amounts-energy">Pierre Delforge 2015, NRDC</a></small>
+					</section>
+
+					<section>
+						<h4> Why collect data? (provider) </h4>
+						<ul class="fragment">
+							<li>Required for training of AI</li>
+							<li>It disencourages customers from leaving</li>
+							<li>Ad revenue</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>How is it collected?</h4>
+						<p class="fragment">By logging behaviour and actions</p>
+						<p class="fragment">When you send a message or like a photo etc.</p>
+						<p class="fragment">..but also when you're not actively providing input</p>
+					</section>
+
+					<section>
+						<h4>Example: 2018 Study of Google</h4>
+						<p class="fragment">On systems such as Android, Chrome, Maps etc.:</p>
+						<p class="fragment">2/3 of all data collected didn't require any input!</p>
+						<p class="footer">Source: <a href="https://digitalcontentnext.org/wp-content/uploads/2018/08/DCN-Google-Data-Collection-Paper.pdf"> Google Data Collection, Douglas C. Schmidt, Vanderbilt University</a></p>
+					</section>
 				</section>
+
+				<section id="obfuscation">
+
+					<section>
+						<h2> 2. Obfuscation by human centrism </h2>
+					</section>
+
+					<section data-background="images/socnet.png" data-background-size="750px" data-background-transition="zoom">
+						<h4> Obfuscation (consumer)</h4>
+						<p class="fragment">It's often unclear what's going on behind the scenes:</p>
+						<p class="fragment">On your smartphone, apps, online services, smart TV etc.</p>
+						<br>
+						<p class="fragment">Examples include:</p>
+						<p class="fragment">Google Drive, Facebook, Instagram, KakaoTalk, Snapchat, etc.</p>
+					</section>
+
+					<section>
+						<h4> Obfuscation (business)</h4>
+						<p class="fragment">It's often unclear what's going on behind the scenes:</p>
+						<p class="fragment">Web-based office tools, Cloud, Analysis APIs</p>
+						<br>
+						<p class="fragment">Examples include:</p>
+						<p class="fragment">AWS, Google Cloud, Office 365, Tableau, etc.</p>
+					</section>
+
+					<section>
+						<h4> What's going on behind the scenes? (consumer)</h4>
+						<p class="fragment">Increased usage of IT in all aspects of daily life</p>
+						<p class="fragment"></p>
+					</section>
+
+					<section>
+						<h4>What's going on behind the scenes? (business)</h4>
+						<p class="fragment">Businesses migrate to cloud services, due to stability, cost, etc.</p>
+						<p class="fragment">..but it's often forgotten that:</p>
+						<p class="fragment">The cloud, is simply servers, i.e. computers somewhere else</p>
+					</section>
+
+
+
+
+
+
+
+				</section>
+
+				<section id="server-computing">
+
+					<section>
+						<h2> 5. The actual scale of server computing </h2>
+					</section>
+
+					<section>
+						<h4> The actual scale of server computing #1</h4>
+						<p class="fragment">More data is collected/analysed than ever before</p>
+						<p class="fragment"> Most communication handled on internet</p>
+						<p class="fragment"> Storage and analysis handled by data centers/server farms </p>
+						<p class="fragment"> .. how so?</p>
+					</section>
+
+					<section id="cap" data-background-image="https://media.giphy.com/media/PD9hjqdeidgqY/giphy.gif">
+					</section>
+
+					<section>
+						<h4> The actual scale of server computing #2</h4>
+						<ul>
+							<li class="fragment">2013: U.S. Data Centers consumed 91B KwH annually</li>
+						<ul>
+							<li class="fragment"><q cite="https://www.nrdc.org/resources/americas-data-centers-consuming-and-wasting-growing-amounts-energy">equivalent to the annual output of 34 large (500-megawatt) coal-fired power plants</q></li>
+						</ul>
+						<li class="fragment">2020 Forecast: 140B KwH annually</li>
+							<ul>
+								<li class="fragment">..that's the annual output of ~50 large power plants</li>
+								<li class="fragment">..costing $13B annually, in electricity bills</li>
+								<li class="fragment">..100M tonnes of carbon pollution</li>
+							</ul>
+						</ul>
+						<p class="footer">Source: <a href="https://www.nrdc.org/resources/americas-data-centers-consuming-and-wasting-growing-amounts-energy">Pierre Delforge 2015, NRDC</a></p>
+					</section>
+
+					<section>
+						<h4> The actual scale of server computing #3</h4>
+						<p class="fragment"> These numbers may not mean much by themselves</p>
+						<p class="fragment"> 140B KwH was consumption of electricity in Poland, 2014</p>
+						<p class="fragment"> .. a country of almost 40M people.</p>
+						<p class="footer">Source: <a href="http://databank.worldbank.org/data/reports.aspx?source=2&series=EG.USE.ELEC.KH.PC">Worldbanks Databank</a></p>
+					</section>
+				<section>
 
 			</div>
 		</div>
@@ -105,7 +206,7 @@
 				history: true,
 				center: true,
 
-				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
