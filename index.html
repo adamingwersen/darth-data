@@ -39,8 +39,7 @@
 			<div class="slides">
 
 				<section>
-					<h2>A less obvious drawback of Big Data</h2>
-					<h4>an inconvenient footnote</h4>
+					<h2>Less obvious drawbacks of Big Data</h2>
 					<p>
 						<small>Slides by <a href="github.com/adamingwersen">Adam Ingwersen</a></small>
 						<hr>
@@ -56,7 +55,7 @@
 						<li class="fragment"> Data Hungry Algorithms </li> <!-- Increased complication in algorithms -->
 						<li class="fragment">	The death of Moores Law</li> <!-- Transistors are not yet nanotech, compute units vs. power over time -->
 						<li class="fragment">	The actual scale of server computing</li> <!-- Google, NSA and what they collect/analyze -->
-						<li class="fragment">	The future and how to cope</li> <!-- Governmental interference or 'good companies' -->
+						<li class="fragment">	Future, remedies and business opportunities</li> <!-- Governmental interference or 'good companies' -->
 					</ol>
 				</section>
 
@@ -90,7 +89,7 @@
 					<section>
 						<h4>How is it collected?</h4>
 						<p class="fragment">By logging behaviour and actions</p>
-						<p class="fragment">When you send a message or like a photo etc.</p>
+						<p class="fragment">When you send a message, upload a photo, consume media etc.</p>
 						<p class="fragment">..but also when you're not actively providing input</p>
 					</section>
 
@@ -116,10 +115,24 @@
 					</section>
 
 					<section>
+						<h4>Data creation</h4>
+						<ul>
+							<li class="fragment">People connected to internet increasing by ~2%/yr</p>
+							<li class="fragment">There are now more connected devices than people</li>
+							<li class="fragment">IoT devices forecasted to over 20B by 2020 </li>
+							<li class="fragment">They all transmit or collect data</li>
+						</ul>
+						<p class="footer">Source: <a href="https://en.wikipedia.org/wiki/Global_Internet_usage">International Telecommunications Union</a></p>
+						<p class="footer">Source: <a href="https://www.independent.co.uk/life-style/gadgets-and-tech/news/there-are-officially-more-mobile-devices-than-people-in-the-world-9780518.html">Independent, 2014</a></p>
+						<p class="footer">Source: <a href="https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/">State of IoT 2018</a></p>
+					</section>
+
+					<section>
 						<h4>Trends summary</h4>
 						<ul>
 							<li class="fragment">Users are more active online, and thus provide more information</li>
 							<li class="fragment">More data is being collected pr. user pr. second</li>
+							<li class="fragment">Number of devices capable of collecting data rapidly increasing</li>
 							<li class="fragment">In addition more users are accessing the internet worldwide</li>
 							<li class="fragment">Data is becoming larger and more frequently uploaded/downloaded</li>
 						</ul>
@@ -164,7 +177,7 @@
 					<section>
 						<h4> Neural Networks #1</h4>
 						<p class="fragment">Neural Networks' performance depend on vast amounts of data</p>
-						<p class="fragment">..they can often make sense of data, that humans don't comprehend</p>
+						<p class="fragment">..they can often make sense of data, that humans can't comprehend</p>
 						<p class="fragment">..and spot patterns that humans would never see</p>
 					</section>
 
@@ -179,8 +192,11 @@
 					<section data-background="images/cnn.jpeg" data-background-transition="zoom" data-background-size="1000px">
 					</section>
 
+					<section data-background="images/googlenet.png" data-background-transition="zoom" data-background-size="1400px">
+					</section>
+
 					<section>
-						<h4>Summary</h4>
+						<h4>Trends Summary</h4>
 						<ul>
 							<li class="fragment">Algorithms are becoming more complicated</li>
 							<li class="fragment">Thus, more computationally expensive</li>
@@ -213,27 +229,33 @@
 					<section>
 						<h4>Implications</h4>
 						<ul class="fragment">
-							<li>Computation will not become increasingly efficient as previously observed</li>
-							<li>This may drive down the price of cutting edge processors</li>
-							<li>..as competitors are catching up to Intel</li>
+							<li>Computation will not become increasingly efficient at previously observed rate</li>
+							<li>The rate at which data needs processing is outpacing the increase in processing power performance increases</li>
 						</ul>
 					</section>
 				</section>
 
+
 				<section id="server-computing">
 					<section>
-						<h2> 5. The actual scale of server computing </h2>
+						<h2> 4. The actual scale of server computing </h2>
 					</section>
 
 					<section>
 						<h4> The actual scale of server computing #1</h4>
-						<p class="fragment">More data is collected/analysed than ever before</p>
+						<p class="fragment">More data is collected/analyzed than ever before</p>
 						<p class="fragment"> Most communication handled on internet</p>
 						<p class="fragment"> Storage and analysis handled by data centers/server farms </p>
 						<p class="fragment"> .. how so?</p>
 					</section>
 
 					<section id="cap" data-background-image="https://media.giphy.com/media/PD9hjqdeidgqY/giphy.gif">
+					</section>
+
+					<section id="out" data-background-image="images/datacenter_out.jpg" data-background-transition="zoom" data-background-size="1300px">
+					</section>
+
+					<section id="out" data-background-image="images/datacenter_in.png" data-background-transition="zoom" data-background-size="1300px">
 					</section>
 
 					<section>
@@ -260,7 +282,67 @@
 						<p class="fragment"> .. a country of almost 40M people.</p>
 						<p class="footer">Source: <a href="http://databank.worldbank.org/data/reports.aspx?source=2&series=EG.USE.ELEC.KH.PC">Worldbanks Databank</a></p>
 					</section>
-				<section>
+
+					<section>
+						<h4> The actual scale of server computing #4</h4>
+						<p class="fragment"> In 2017: 3% of Global Power Consumption by data centers</p>
+						<p class="fragment"> Forecast: 20% of GPC by 2025</p>
+						<p class="footer">Source: <a href="https://www.forbes.com/sites/forbestechcouncil/2017/12/15/why-energy-is-a-big-and-rapidly-growing-problem-for-data-centers/">Forbes, 2017</a></p>
+						<p class="footer">Source: <a href="https://www.researchgate.net/publication/320225452_Total_Consumer_Power_Consumption_Forecast">Total Consumer Power Consumption Forecast, Anders Andrae, Huawei</a></p>
+					</section>
+				</section>
+
+				<section id="future">
+					<section>
+						<h2>5. Future, remedies and business opportunites</h2>
+					</section>
+
+					<section>
+						<h4>Future</h4>
+						<p class="fragment">Dramatic increases in power consumption by data centers</p>
+						<p class="fragment">More firms will become self-reliant (solar, wind, hydro, etc.)</p>
+						<p class="fragment">Increased awareness among researchers, governments and consumers</p>
+						<p class="fragment">Need for green transition or de-escalation of Big Data Procedures</p>
+					</section>
+
+					<section>
+						<h4>Remedies</h4>
+						<p class="fragment">Legislative interference</p>
+						<p class="fragment">Consumers demanding green practices</p>
+						<p class="fragment">Exogenous shock to energy prices</p>
+						<p class="fragment">Alternative services</p>
+					</section>
+
+					<section>
+						<h4>Current Profit Model</h4>
+						<p class="fragment">Consumers pay for some service with their data</p>
+						<p class="fragment">Data is used to create profiles about costumers</p>
+						<p class="fragment">Precise profiles are valuable to e.g. advertisers</p>
+					</section>
+
+					<section>
+						<h4>Business Opportunites (Alternative Services)</h4>
+						<ul>
+							<li class="fragment">Localized data transactions: Peer-to-peer</li>
+							<li class="fragment">Service that tracks data throughput and caps it</li>
+							<li class="fragment">Subscription-based model to opt-out</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Business Opportunites (CSR)</h4>
+						<ul>
+							<li class="fragment">Offer tracing of environmental impact</li>
+							<li class="fragment">Advertise with green focus, see <a href="https://www.youtube.com/results?search_query=orsted+commercial">Ørsted</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Thank you</h2>
+						<h4>Questions?</h4>
+					</section>
+
+				</section>
 
 			</div>
 		</div>
