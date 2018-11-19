@@ -34,14 +34,12 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
 				<section>
-					<h2>Less obvious drawbacks of Big Data</h2>
+					<h2>A less obvious drawback of Big Data</h2>
 					<h4>an inconvenient footnote</h4>
 					<p>
 						<small>Slides by <a href="github.com/adamingwersen">Adam Ingwersen</a></small>
@@ -54,7 +52,8 @@
 					<h4>Outline</h4>
 					<ol>
 						<li class="fragment">	What enables Big Data and why?</li> <!-- Why the increase in data collected? -->
-						<li class="fragment">	Obfuscation by human centrism</li> <!-- Just because you don't see it, doesn't mean it's not there -->
+						<!-- <li class="fragment">	Obfuscation by human centrism</li>  Just because you don't see it, doesn't mean it's not there -->
+						<li class="fragment"> Data Hungry Algorithms </li> <!-- Increased complication in algorithms -->
 						<li class="fragment">	The death of Moores Law</li> <!-- Transistors are not yet nanotech, compute units vs. power over time -->
 						<li class="fragment">	The actual scale of server computing</li> <!-- Google, NSA and what they collect/analyze -->
 						<li class="fragment">	The future and how to cope</li> <!-- Governmental interference or 'good companies' -->
@@ -103,11 +102,90 @@
 					</section>
 
 					<section>
-						<h4>Trends</h4>
-						<ul class="fragment">
-							<li>Users are more active online, and thus provide more information</li>
-							<li>More data is being collected pr. user pr. second</li>
-							<li>In addition more users are accessing the internet worldwide</li>
+						<h4>Evolution in data types and -size</h4>
+						<ul>
+							<li class="fragment">With social media came explosion in images and short videos</li>
+							<li class="fragment">With streaming came explosion in HD movies and HQ Music</li>
+							<li class="fragment">..and it's all being backed up and analyzed</li>
+					</section>
+
+					<section data-background="images/subset.png" data-background-transition="zoom" data-background-size="1200px">
+					</section>
+
+					<section data-background="images/full.png" data-background-transition="zoom" data-background-size="1200px">
+					</section>
+
+					<section>
+						<h4>Trends summary</h4>
+						<ul>
+							<li class="fragment">Users are more active online, and thus provide more information</li>
+							<li class="fragment">More data is being collected pr. user pr. second</li>
+							<li class="fragment">In addition more users are accessing the internet worldwide</li>
+							<li class="fragment">Data is becoming larger and more frequently uploaded/downloaded</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="algorithms">
+					<section>
+						<h2> 2. Data Hungry Algorithms </h2>
+					</section>
+
+					<section>
+						<h4> Early AI </h4>
+						<ul>
+							<li class="fragment">Theoretical foundations of Neural Networks, late 1940s</li>
+							<li class="fragment">Fell short compared to other techniques</li>
+							<li class="fragment">Research resurged throughout 1970s, 1980s and halted</li>
+							<li class="fragment">Not enough data nor computing power</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4> AI in the 2000s </h4>
+						<ul>
+							<li class="fragment">Neural Network research once again resurged</li>
+							<li class="fragment">For the first time, the computers weren't the problem</li>
+							<li class="fragment">Companies such as Google started investing heavily</li>
+							<li class="fragment">Facebook emerged with a completely data-driven profit model</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4> AI Today </h4>
+						<ul>
+							<li class="fragment">Neural Networks are better than humans at recongnizing objects in images</li>
+							<li class="fragment">Deployed in all aspects of automated systems</li>
+							<li class="fragment">Today used for a wide variety of tasks</li>
+							<li class="fragment">The use is rapidly increasing and applications widening</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4> Neural Networks #1</h4>
+						<p class="fragment">Neural Networks' performance depend on vast amounts of data</p>
+						<p class="fragment">..they can often make sense of data, that humans don't comprehend</p>
+						<p class="fragment">..and spot patterns that humans would never see</p>
+					</section>
+
+					<section>
+						<h4> Neural Networks #2</h4>
+						<p class="fragment">Neural Networks use <b>convolution</b></p>
+						<p class="fragment">Which means, that the algorithm crops, scales, distorts and rotate input</p>
+						<p class="fragment">This is very expensive from a computational standpoint</p>
+						<p class="fragment">..and one of the main reasons, why NN's only recently have become successful</p>
+					</section>
+
+					<section data-background="images/cnn.jpeg" data-background-transition="zoom" data-background-size="1000px">
+					</section>
+
+					<section>
+						<h4>Summary</h4>
+						<ul>
+							<li class="fragment">Algorithms are becoming more complicated</li>
+							<li class="fragment">Thus, more computationally expensive</li>
+							<li class="fragment">Require more data to keep improving performance</li>
+						</ul>
 					</section>
 				</section>
 
@@ -143,7 +221,6 @@
 				</section>
 
 				<section id="server-computing">
-
 					<section>
 						<h2> 5. The actual scale of server computing </h2>
 					</section>
